@@ -1,0 +1,130 @@
+public class ZSBO
+{
+      //판매관리
+    private static ZMC918 oZMC918 = new ZMC918();                                   // 납품_일련번호/배치번호별 납품 현황조회(TAG,호선번호)
+    private static ZMC919 oZMC919 = new ZMC919();                                   // 물류_배치번호별 판매오더조회
+    private static ZMC920 oZMC920 = new ZMC920();                                   // 물류_피킹리스트 생성 현황조회(TAG,배치번호)
+    private static ZMC921 oZMC921 = new ZMC921();                                   // 물류_TAG 일련번호별 판매오더조회
+    private static ZMC922 oZMC922 = new ZMC922();                                   // 수주잔액현황조회(순액/선매출)
+    private static ZMC923 oZMC923 = new ZMC923();                                   // 판매오더_단가 누락 품목조회(가격리스트01기준)
+    private static ZMC924 oZMC924 = new ZMC924();                                   // 판매오더_호선별 재고현황조회
+    private static ZMC925 oZMC925 = new ZMC925();                                   // 현재고 판매오더 대사 현황조회(품목코드 존재유무)
+    private static ZMC926 oZMC926 = new ZMC926();                                   // AR송장_매출·미청구채권 상세 현황조회
+    private static ZMC927 oZMC927 = new ZMC927();                                   // AR송장_선매출·미청구채권 잔액 현황조회
+    private static ZMC936 oZMC936 = new ZMC936();                                   // [영업마감] 매출반품/AR대변메모 집계
+    private static ZMC937 oZMC937 = new ZMC937();                                   // [영업마감] 미결납품 집계
+    private static ZMC938 oZMC938 = new ZMC938();                                   // [영업마감] AR송장 집계
+    private static ZMC939 oZMC939 = new ZMC939();                                   // [영업마감] AR송장 집계(거래처,프로젝트,호선,제품군)
+
+    //재고관리
+    private static ZMC928 oZMC928 = new ZMC928();                                   // 창고별 재고실사 조회(호선번호, TAG번호, 관리번호, PO번호)
+    private static ZMC944 oZMC944 = new ZMC944();                                   // [재고마감] 일련/배치 관리규칙 오류 집계
+    private static ZMC945 oZMC945 = new ZMC945();                                   // [재고마감] 일련/배치 재고 정합성
+    private static ZMC946 oZMC946 = new ZMC946();                                   // [재고마감] 재고실사 조정현황
+    private static ZMC947 oZMC947 = new ZMC947();                                   // [재고마감] 품목대체 입출고 수량 비교
+
+    //구매관리
+    private static ZMC929 oZMC929 = new ZMC929();                                   // [구매마감] 구매반품 집계
+    private static ZMC930 oZMC930 = new ZMC930();                                   // [구매마감] 기타입출고 집계
+    private static ZMC931 oZMC931 = new ZMC931();                                   // [구매마감] 이상 매입단가 확인
+    private static ZMC932 oZMC932 = new ZMC932();                                   // [구매마감] AP대변메모 집계
+    private static ZMC933 oZMC933 = new ZMC933();                                   // [구매마감] AP송장 집계
+    private static ZMC934 oZMC934 = new ZMC934();                                   // [구매마감] AP예약송장(미착) 집계
+
+    //생산관리
+    private static ZMC935 oZMC935 = new ZMC935();                                   // 생산관리_구성품 재고확보 현황조회
+    private static ZMC940 oZMC940 = new ZMC940();                                   // [생산마감] 생산오더 계획대비 생산입고 차이현황
+    private static ZMC941 oZMC941 = new ZMC941();                                   // [생산마감] 생산오더 미완료 집계
+    private static ZMC942 oZMC942 = new ZMC942();                                   // [생산마감] 생산오더 미종료 현황(생산입고완료건)
+    private static ZMC943 oZMC943 = new ZMC943();                                   // [생산마감] 생산출고 정합성 집계
+
+    private void SBO_Application_ItemEvent(string FormUID, ref SAPbouiCOM.ItemEvent pVal, out bool BubbleEvent)
+    {
+
+                //판매관리
+                case "ZMC918": oZMC918.SBO_Application_ItemEvent(FormUID, ref pVal, out BubbleEvent); break;                        // 납품_일련번호/배치번호별 납품 현황조회(TAG,호선번호)
+                case "ZMC919": oZMC919.SBO_Application_ItemEvent(FormUID, ref pVal, out BubbleEvent); break;                        // 물류_배치번호별 판매오더조회
+                case "ZMC920": oZMC920.SBO_Application_ItemEvent(FormUID, ref pVal, out BubbleEvent); break;                        // 물류_피킹리스트 생성 현황조회(TAG,배치번호)
+                case "ZMC921": oZMC921.SBO_Application_ItemEvent(FormUID, ref pVal, out BubbleEvent); break;                        // 물류_TAG 일련번호별 판매오더조회
+                case "ZMC922": oZMC922.SBO_Application_ItemEvent(FormUID, ref pVal, out BubbleEvent); break;                        // 수주잔액현황조회(순액/선매출)
+                case "ZMC923": oZMC923.SBO_Application_ItemEvent(FormUID, ref pVal, out BubbleEvent); break;                        // 판매오더_단가 누락 품목조회(가격리스트01기준)
+                case "ZMC924": oZMC924.SBO_Application_ItemEvent(FormUID, ref pVal, out BubbleEvent); break;                        // 판매오더_호선별 재고현황조회
+                case "ZMC925": oZMC925.SBO_Application_ItemEvent(FormUID, ref pVal, out BubbleEvent); break;                        // 현재고 판매오더 대사 현황조회(품목코드 존재유무)
+                case "ZMC926": oZMC926.SBO_Application_ItemEvent(FormUID, ref pVal, out BubbleEvent); break;                        // AR송장_매출·미청구채권 상세 현황조회
+                case "ZMC927": oZMC927.SBO_Application_ItemEvent(FormUID, ref pVal, out BubbleEvent); break;                        // AR송장_선매출·미청구채권 잔액 현황조회
+                case "ZMC936": oZMC936.SBO_Application_ItemEvent(FormUID, ref pVal, out BubbleEvent); break;                        // [영업마감] 매출반품/AR대변메모 집계
+                case "ZMC937": oZMC937.SBO_Application_ItemEvent(FormUID, ref pVal, out BubbleEvent); break;                        // [영업마감] 미결납품 집계
+                case "ZMC938": oZMC938.SBO_Application_ItemEvent(FormUID, ref pVal, out BubbleEvent); break;                        // [영업마감] AR송장 집계
+                case "ZMC939": oZMC939.SBO_Application_ItemEvent(FormUID, ref pVal, out BubbleEvent); break;                        // [영업마감] AR송장 집계(거래처,프로젝트,호선,제품군)
+
+
+                //재고관리
+                case "ZMC928": oZMC928.SBO_Application_ItemEvent(FormUID, ref pVal, out BubbleEvent); break;                        // 창고별 재고실사 조회(호선번호, TAG번호, 관리번호, PO번호)
+                case "ZMC944": oZMC944.SBO_Application_ItemEvent(FormUID, ref pVal, out BubbleEvent); break;                        // [재고마감] 일련/배치 관리규칙 오류 집계
+                case "ZMC945": oZMC945.SBO_Application_ItemEvent(FormUID, ref pVal, out BubbleEvent); break;                        // [재고마감] 일련/배치 재고 정합성
+                case "ZMC946": oZMC946.SBO_Application_ItemEvent(FormUID, ref pVal, out BubbleEvent); break;                        // [재고마감] 재고실사 조정현황
+                case "ZMC947": oZMC947.SBO_Application_ItemEvent(FormUID, ref pVal, out BubbleEvent); break;                        // [재고마감] 품목대체 입출고 수량 비교
+
+
+                //구매관리 
+                case "ZMC929": oZMC929.SBO_Application_ItemEvent(FormUID, ref pVal, out BubbleEvent); break;                        // [구매마감] 구매반품 집계
+                case "ZMC930": oZMC930.SBO_Application_ItemEvent(FormUID, ref pVal, out BubbleEvent); break;                        // [구매마감] 기타입출고 집계
+                case "ZMC931": oZMC931.SBO_Application_ItemEvent(FormUID, ref pVal, out BubbleEvent); break;                        // [구매마감] 이상 매입단가 확인
+                case "ZMC932": oZMC932.SBO_Application_ItemEvent(FormUID, ref pVal, out BubbleEvent); break;                        // [구매마감] AP대변메모 집계
+                case "ZMC933": oZMC933.SBO_Application_ItemEvent(FormUID, ref pVal, out BubbleEvent); break;                        // [구매마감] AP송장 집계
+                case "ZMC934": oZMC934.SBO_Application_ItemEvent(FormUID, ref pVal, out BubbleEvent); break;                        // [구매마감] AP예약송장(미착) 집계
+
+                //생산관리
+                case "ZMC935": oZMC935.SBO_Application_ItemEvent(FormUID, ref pVal, out BubbleEvent); break;                        // 생산관리_구성품 재고확보 현황조회
+                case "ZMC940": oZMC940.SBO_Application_ItemEvent(FormUID, ref pVal, out BubbleEvent); break;                        // [생산마감] 생산오더 계획대비 생산입고 차이현황
+                case "ZMC941": oZMC941.SBO_Application_ItemEvent(FormUID, ref pVal, out BubbleEvent); break;                        // [생산마감] 생산오더 미완료 집계
+                case "ZMC942": oZMC942.SBO_Application_ItemEvent(FormUID, ref pVal, out BubbleEvent); break;                        // [생산마감] 생산오더 미종료 현황(생산입고완료건)
+                case "ZMC943": oZMC943.SBO_Application_ItemEvent(FormUID, ref pVal, out BubbleEvent); break;                        // [생산마감] 생산출고 정합성 집계
+
+      }
+
+    private void SBO_Application_MenuEvent(ref SAPbouiCOM.MenuEvent pVal, out bool BubbleEvent)
+    {
+
+               //판매관리                
+                case "ZMC918": oZMC918.SBO_Application_MenuEvent(ref pVal, out BubbleEvent); break;                                 // 납품_일련번호/배치번호별 납품 현황조회(TAG,호선번호)
+                case "ZMC919": oZMC919.SBO_Application_MenuEvent(ref pVal, out BubbleEvent); break;                                 // 물류_배치번호별 판매오더조회
+                case "ZMC920": oZMC920.SBO_Application_MenuEvent(ref pVal, out BubbleEvent); break;                                 // 물류_피킹리스트 생성 현황조회(TAG,배치번호)
+                case "ZMC921": oZMC921.SBO_Application_MenuEvent(ref pVal, out BubbleEvent); break;                                 // 물류_TAG 일련번호별 판매오더조회
+                case "ZMC922": oZMC922.SBO_Application_MenuEvent(ref pVal, out BubbleEvent); break;                                 // 수주잔액현황조회(순액/선매출)
+                case "ZMC923": oZMC923.SBO_Application_MenuEvent(ref pVal, out BubbleEvent); break;                                 // 판매오더_단가 누락 품목조회(가격리스트01기준)
+                case "ZMC924": oZMC924.SBO_Application_MenuEvent(ref pVal, out BubbleEvent); break;                                 // 판매오더_호선별 재고현황조회
+                case "ZMC925": oZMC925.SBO_Application_MenuEvent(ref pVal, out BubbleEvent); break;                                 // 현재고 판매오더 대사 현황조회(품목코드 존재유무)
+                case "ZMC926": oZMC926.SBO_Application_MenuEvent(ref pVal, out BubbleEvent); break;                                 // AR송장_매출·미청구채권 상세 현황조회
+                case "ZMC927": oZMC927.SBO_Application_MenuEvent(ref pVal, out BubbleEvent); break;                                 // AR송장_선매출·미청구채권 잔액 현황조회
+                case "ZMC936": oZMC936.SBO_Application_MenuEvent(ref pVal, out BubbleEvent); break;                                 // [영업마감] 매출반품/AR대변메모 집계
+                case "ZMC937": oZMC937.SBO_Application_MenuEvent(ref pVal, out BubbleEvent); break;                                 // [영업마감] 미결납품 집계
+                case "ZMC938": oZMC938.SBO_Application_MenuEvent(ref pVal, out BubbleEvent); break;                                 // [영업마감] AR송장 집계
+                case "ZMC939": oZMC939.SBO_Application_MenuEvent(ref pVal, out BubbleEvent); break;                                 // [영업마감] AR송장 집계(거래처,프로젝트,호선,제품군)
+
+                //재고관리
+                case "ZMC928": oZMC928.SBO_Application_MenuEvent(ref pVal, out BubbleEvent); break;                                 // 창고별 재고실사 조회(호선번호, TAG번호, 관리번호, PO번호)
+                case "ZMC944": oZMC944.SBO_Application_MenuEvent(ref pVal, out BubbleEvent); break;                                 // [재고마감] 일련/배치 관리규칙 오류 집계
+                case "ZMC945": oZMC945.SBO_Application_MenuEvent(ref pVal, out BubbleEvent); break;                                 // [재고마감] 일련/배치 재고 정합성
+                case "ZMC946": oZMC946.SBO_Application_MenuEvent(ref pVal, out BubbleEvent); break;                                 // [재고마감] 재고실사 조정현황
+                case "ZMC947": oZMC947.SBO_Application_MenuEvent(ref pVal, out BubbleEvent); break;                                 // [재고마감] 품목대체 입출고 수량 비교
+
+
+                //구매관리 
+                case "ZMC929": oZMC929.SBO_Application_MenuEvent(ref pVal, out BubbleEvent); break;                                 // [구매마감] 구매반품 집계
+                case "ZMC930": oZMC930.SBO_Application_MenuEvent(ref pVal, out BubbleEvent); break;                                 // [구매마감] 기타입출고 집계
+                case "ZMC931": oZMC931.SBO_Application_MenuEvent(ref pVal, out BubbleEvent); break;                                 // [구매마감] 이상 매입단가 확인
+                case "ZMC932": oZMC932.SBO_Application_MenuEvent(ref pVal, out BubbleEvent); break;                                 // [구매마감] AP대변메모 집계
+                case "ZMC933": oZMC933.SBO_Application_MenuEvent(ref pVal, out BubbleEvent); break;                                 // [구매마감] AP송장 집계
+                case "ZMC934": oZMC934.SBO_Application_MenuEvent(ref pVal, out BubbleEvent); break;                                 // [구매마감] AP예약송장(미착) 집계
+
+                //생산관리 
+                case "ZMC935": oZMC935.SBO_Application_MenuEvent(ref pVal, out BubbleEvent); break;                                 // 생산관리_구성품 재고확보 현황조회
+                case "ZMC940": oZMC940.SBO_Application_MenuEvent(ref pVal, out BubbleEvent); break;                                 // [생산마감] 생산오더 계획대비 생산입고 차이현황
+                case "ZMC941": oZMC941.SBO_Application_MenuEvent(ref pVal, out BubbleEvent); break;                                 // [생산마감] 생산오더 미완료 집계
+                case "ZMC942": oZMC942.SBO_Application_MenuEvent(ref pVal, out BubbleEvent); break;                                 // [생산마감] 생산오더 미종료 현황(생산입고완료건)
+                case "ZMC943": oZMC943.SBO_Application_MenuEvent(ref pVal, out BubbleEvent); break;                                 // [생산마감] 생산출고 정합성 집계
+                    
+    }
+
+}

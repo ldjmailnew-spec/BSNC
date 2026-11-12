@@ -1,0 +1,47 @@
+D:\30_PGM\A10_매크론\A20_BSNC_Logistics_MCR (최종대상)\10_PGM\__기초통합\BSNC_Logistics_MCR_20260101_최초\obj\Debug\Interop.Microsoft.Office.Core.dll
+D:\30_PGM\A10_매크론\A20_BSNC_Logistics_MCR (최종대상)\10_PGM\__기초통합\BSNC_Logistics_MCR_20260101_최초\obj\Debug\Interop.Microsoft.Office.Interop.Excel.dll
+D:\30_PGM\A10_매크론\A20_BSNC_Logistics_MCR (최종대상)\10_PGM\__기초통합\BSNC_Logistics_MCR_20260101_최초\obj\Debug\Interop.SHDocVw.dll
+D:\30_PGM\A10_매크론\A20_BSNC_Logistics_MCR (최종대상)\10_PGM\__기초통합\BSNC_Logistics_MCR_20260101_최초\obj\Debug\Interop.VBIDE.dll
+D:\30_PGM\A10_매크론\A20_BSNC_Logistics_MCR (최종대상)\10_PGM\__기초통합\BSNC_Logistics_MCR_20260101_최초\obj\Debug\BSNC_Logistics_MCR.csproj.ResolveComReference.cache
+D:\30_PGM\A10_매크론\A20_BSNC_Logistics_MCR (최종대상)\10_PGM\__기초통합\BSNC_Logistics_MCR_20260101_최초\bin\BSNC_Logistics_MCR.exe
+D:\30_PGM\A10_매크론\A20_BSNC_Logistics_MCR (최종대상)\10_PGM\__기초통합\BSNC_Logistics_MCR_20260101_최초\bin\BSNC_Logistics_MCR.pdb
+D:\30_PGM\A10_매크론\A20_BSNC_Logistics_MCR (최종대상)\10_PGM\__기초통합\BSNC_Logistics_MCR_20260101_최초\bin\Interop.Microsoft.Office.Core.dll
+D:\30_PGM\A10_매크론\A20_BSNC_Logistics_MCR (최종대상)\10_PGM\__기초통합\BSNC_Logistics_MCR_20260101_최초\bin\Interop.Microsoft.Office.Interop.Excel.dll
+D:\30_PGM\A10_매크론\A20_BSNC_Logistics_MCR (최종대상)\10_PGM\__기초통합\BSNC_Logistics_MCR_20260101_최초\bin\Interop.SHDocVw.dll
+D:\30_PGM\A10_매크론\A20_BSNC_Logistics_MCR (최종대상)\10_PGM\__기초통합\BSNC_Logistics_MCR_20260101_최초\bin\Interop.VBIDE.dll
+D:\30_PGM\A10_매크론\A20_BSNC_Logistics_MCR (최종대상)\10_PGM\__기초통합\BSNC_Logistics_MCR_20260101_최초\obj\Debug\ResolveAssemblyReference.cache
+D:\30_PGM\A10_매크론\A20_BSNC_Logistics_MCR (최종대상)\10_PGM\__기초통합\BSNC_Logistics_MCR_20260101_최초\obj\Debug\CRPRT.CRForm1.resources
+D:\30_PGM\A10_매크론\A20_BSNC_Logistics_MCR (최종대상)\10_PGM\__기초통합\BSNC_Logistics_MCR_20260101_최초\obj\Debug\CRPRT.CRForm2.resources
+D:\30_PGM\A10_매크론\A20_BSNC_Logistics_MCR (최종대상)\10_PGM\__기초통합\BSNC_Logistics_MCR_20260101_최초\obj\Debug\BSNC_Logistics_MCR.csproj.GenerateResource.Cache
+D:\30_PGM\A10_매크론\A20_BSNC_Logistics_MCR (최종대상)\10_PGM\__기초통합\BSNC_Logistics_MCR_20260101_최초\obj\Debug\BSNC_Logistics_MCR.exe
+D:\30_PGM\A10_매크론\A20_BSNC_Logistics_MCR (최종대상)\10_PGM\__기초통합\BSNC_Logistics_MCR_20260101_최초\obj\Debug\BSNC_Logistics_MCR.pdb
+C:\Users\SYM\Desktop\BSNC_Logistics_MCR\obj\Debug\Interop.Microsoft.Office.Core.dll
+C:\Users\SYM\Desktop\BSNC_Logistics_MCR\obj\Debug\Interop.Microsoft.Office.Interop.Excel.dll
+C:\Users\SYM\Desktop\BSNC_Logistics_MCR\obj\Debug\Interop.SHDocVw.dll
+C:\Users\SYM\Desktop\BSNC_Logistics_MCR\obj\Debug\Interop.VBIDE.dll
+C:\Users\SYM\Desktop\BSNC_Logistics_MCR\obj\Debug\BSNC_Logistics_MCR.csproj.ResolveComReference.cache
+C:\Users\SYM\Desktop\BSNC_Logistics_MCR\obj\Debug\BSNC_Logistics_MCR.exe
+C:\Users\SYM\Desktop\BSNC_Logistics_MCR\obj\Debug\BSNC_Logistics_MCR.pdb
+C:\Users\SYM\Desktop\BSNC_Logistics_MCR\bin\BSNC_Logistics_MCR.exe
+C:\Users\SYM\Desktop\BSNC_Logistics_MCR\bin\BSNC_Logistics_MCR.pdb
+C:\Users\SYM\Desktop\BSNC_Logistics_MCR\bin\Interop.Microsoft.Office.Core.dll
+C:\Users\SYM\Desktop\BSNC_Logistics_MCR\bin\Interop.Microsoft.Office.Interop.Excel.dll
+C:\Users\SYM\Desktop\BSNC_Logistics_MCR\bin\Interop.SHDocVw.dll
+C:\Users\SYM\Desktop\BSNC_Logistics_MCR\bin\Interop.VBIDE.dll
+C:\Users\SYM\Desktop\BSNC_Logistics_MCR\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\SYM\Desktop\BSNC_Logistics_MCR\obj\Debug\CRPRT.CRForm1.resources
+C:\Users\SYM\Desktop\BSNC_Logistics_MCR\obj\Debug\CRPRT.CRForm2.resources
+C:\Users\SYM\Desktop\BSNC_Logistics_MCR\obj\Debug\BSNC_Logistics_MCR.csproj.GenerateResource.Cache
+C:\PRODUCT\01.MACRON\bin\BSNC_Logistics_MCR.exe
+C:\PRODUCT\01.MACRON\bin\BSNC_Logistics_MCR.pdb
+C:\PRODUCT\01.MACRON\bin\Interop.Microsoft.Office.Core.dll
+C:\PRODUCT\01.MACRON\bin\Interop.SHDocVw.dll
+C:\PRODUCT\01.MACRON\obj\Debug\ResolveAssemblyReference.cache
+C:\PRODUCT\01.MACRON\obj\Debug\Interop.Microsoft.Office.Core.dll
+C:\PRODUCT\01.MACRON\obj\Debug\Interop.SHDocVw.dll
+C:\PRODUCT\01.MACRON\obj\Debug\BSNC_Logistics_MCR.csproj.ResolveComReference.cache
+C:\PRODUCT\01.MACRON\obj\Debug\CRPRT.CRForm1.resources
+C:\PRODUCT\01.MACRON\obj\Debug\CRPRT.CRForm2.resources
+C:\PRODUCT\01.MACRON\obj\Debug\BSNC_Logistics_MCR.csproj.GenerateResource.Cache
+C:\PRODUCT\01.MACRON\obj\Debug\BSNC_Logistics_MCR.exe
+C:\PRODUCT\01.MACRON\obj\Debug\BSNC_Logistics_MCR.pdb
